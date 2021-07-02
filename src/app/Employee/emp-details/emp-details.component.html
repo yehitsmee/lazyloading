@@ -1,0 +1,23 @@
+<li *ngFor="let e of emps">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar>
+        <mat-icon>person</mat-icon>
+      </div>
+      <mat-card-title> {{e.name}} </mat-card-title>
+      <mat-card-subtitle>{{e.role}} </mat-card-subtitle>
+      <span class="example-spacer"></span>
+      <div>
+        <mat-card-actions>
+          <button mat-raised-button (click)="delEmp(e)">Delete</button>
+        </mat-card-actions>
+      </div>
+    </mat-card-header>
+  </mat-card>
+</li>
+<br>
+
+
+<button class="fab" mat-fab color="primary" routerLink="/employee/create">
+    <mat-icon class="icon-button" >add</mat-icon>
+</button>

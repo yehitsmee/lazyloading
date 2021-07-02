@@ -1,0 +1,20 @@
+<div class="container">
+  <form #userPost="ngForm" (ngSubmit)="onSubmit(userPost)">
+    <label for="name">Name</label><br>
+    <input type="text"
+class="form-control"
+id="name"
+aria-describedby="emailHelp"
+placeholder="name"
+name="name"
+[(ngModel)]="name"><br><br>
+    <label for="role">Role</label><br>
+    <input type="text"
+class="form-control"
+id="role"
+placeholder="role"
+name="role"
+[(ngModel)]="role"><br><br>
+    <button type="submit">submit</button>
+  </form>
+</div>

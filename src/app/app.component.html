@@ -1,0 +1,25 @@
+<p>
+  <mat-toolbar color="primary">
+    <!-- <span class="example-spacer"></span> -->
+    <span>My Application</span>
+    <span class="example-spacer"></span>
+    <div class="example-button-row">
+      <button mat-button routerLink="/home">Home </button>
+      <button mat-button routerLink="/employee">Employee </button>
+    </div>
+  </mat-toolbar>
+</p>
+<br>
+<div *ngIf="hasRoute('/home')">
+  <app-login-button color="{{userLoggedIn?'warn':'primary'}}" text="{{userLoggedIn?'Logout':'Login'}}"
+    (btnClick)="toggleLogin()">
+  </app-login-button>
+  <div *ngIf=!userLoggedIn>Login to view employee list</div>
+
+</div>
+
+
+<br>
+
+
+<router-outlet></router-outlet>

@@ -1,0 +1,21 @@
+* {
+  margin: 20px;
+}
+li {
+  list-style: none;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.example-card {
+  border-left: 2px solid purple;
+}
+
+.fab {
+  display: inline-flex;
+  justify-content: center;
+  vertical-align: middle;
+  position: fixed;
+  bottom: 20px;
+  left: 47%;
+}
